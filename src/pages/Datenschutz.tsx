@@ -17,16 +17,31 @@ export const Datenschutz: React.FC = () => {
         
         <div>
           <h2 className="font-mono font-bold text-slate-900 text-xs uppercase tracking-wider mb-2">
-            1. Grundsatz: Maximale Datenvermeidung & Privatsphäre
+            1. Verantwortlicher
           </h2>
           <p>
-            Der Schutz Ihrer persönlichen Daten ist integraler Bestandteil des Experiments von botnik.de. Wir erheben grundsätzlich keine personenbezogenen Nutzerdaten zu Werbe-, Tracking-, Profiling- oder Monetarisierungszwecken.
+            Verantwortlicher für die Datenverarbeitung auf dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:<br />
+            <strong>Jens Kathe</strong><br />
+            Hansastraße 6<br />
+            34119 Kassel<br />
+            Deutschland<br />
+            E-Mail: <a href="mailto:jens-kathe@web.de" className="text-slate-900 font-medium underline hover:text-amber-700">jens-kathe@web.de</a><br />
+            Telefon: <a href="tel:+491748192809" className="text-slate-900 font-medium underline hover:text-amber-700">+49 174 8192809</a>
           </p>
         </div>
 
         <div>
           <h2 className="font-mono font-bold text-slate-900 text-xs uppercase tracking-wider mb-2">
-            2. Keine Cookies & kein Tracking
+            2. Grundsatz: Maximale Datenvermeidung & Privatsphäre
+          </h2>
+          <p>
+            Der Schutz Ihrer persönlichen Daten ist integraler Bestandteil von botnik.de. Wir erheben grundsätzlich keine personenbezogenen Nutzerdaten zu Werbe-, Tracking-, Profiling- oder Monetarisierungszwecken.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="font-mono font-bold text-slate-900 text-xs uppercase tracking-wider mb-2">
+            3. Keine Cookies & kein Tracking
           </h2>
           <p>
             Diese Website setzt <strong>keine Tracking-Cookies, keine Marketing-Pixel und keine externen Webanalyse-Tools</strong> (wie Google Analytics, Meta Pixel etc.) ein. Ein Cookie-Banner ist daher technisch und rechtlich nicht erforderlich.
@@ -35,7 +50,7 @@ export const Datenschutz: React.FC = () => {
 
         <div>
           <h2 className="font-mono font-bold text-slate-900 text-xs uppercase tracking-wider mb-2">
-            3. Lokale System-Schriftarten (Keine Google Fonts CDNs)
+            4. Lokale System-Schriftarten (Keine Google Fonts CDNs)
           </h2>
           <p>
             Zur Gewährleistung vollständiger digitaler Souveränität bindet diese Website keinerlei externe Schriftarten von Drittservern ein. Es werden ausschließlich die lokal auf Ihrem Betriebssystem vorinstallierten Schriftarten (System Font Stack) verwendet. Es erfolgt keine Übertragung Ihrer IP-Adresse an externe Font-Provider.
@@ -44,16 +59,16 @@ export const Datenschutz: React.FC = () => {
 
         <div>
           <h2 className="font-mono font-bold text-slate-900 text-xs uppercase tracking-wider mb-2">
-            4. Resonanz-Transducer (Interaktionsdaten)
+            5. Resonanz-Transducer (Interaktionsdaten)
           </h2>
           <p>
-            Wenn Sie im Resonanz-Transducer freiwillig Schieberegler justieren oder ein kurzes Resonanzwort einspeisen, wird diese Information als rein abstrakter Zahlenvektor aggregiert. Es werden dabei weder IP-Adressen, noch Browser-Fingerprints, noch persönliche Identifikatoren gespeichert. Die Speicherung der Eingabehistorie erfolgt ausschließlich lokal in Ihrem eigenen Browser (`localStorage`).
+            Wenn Sie im Resonanz-Transducer freiwillig Schieberegler justieren oder ein kurzes Resonanzwort einspeisen, wird diese Information als rein abstrakter Zahlenvektor aggregiert. Es werden dabei weder IP-Adressen, noch Browser-Fingerprints, noch persönliche Identifikatoren gespeichert. Die Speicherung der Eingabehistorie erfolgt ausschließlich lokal in Ihrem eigenen Browser (<code>localStorage</code>).
           </p>
         </div>
 
         <div>
           <h2 className="font-mono font-bold text-slate-900 text-xs uppercase tracking-wider mb-2">
-            5. Server-Log-Dateien
+            6. Server-Log-Dateien
           </h2>
           <p>
             Der Hosting-Provider unseres Servers erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browser automatisch an den Server übermittelt (Browsertyp, Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage). Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der technischen Funktionsfähigkeit und Sicherheit des Servers).
@@ -62,10 +77,10 @@ export const Datenschutz: React.FC = () => {
 
         <div>
           <h2 className="font-mono font-bold text-slate-900 text-xs uppercase tracking-wider mb-2">
-            6. Ihre Rechte (Auskunft, Berichtigung, Löschung)
+            7. Ihre Rechte (Auskunft, Berichtigung, Löschung)
           </h2>
           <p>
-            Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an den im Impressum angegebenen Betreiber wenden.
+            Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an den Verantwortlichen wenden: Jens Kathe, E-Mail: <a href="mailto:jens-kathe@web.de" className="text-slate-900 font-medium underline hover:text-amber-700">jens-kathe@web.de</a>, Telefon: <a href="tel:+491748192809" className="text-slate-900 font-medium underline hover:text-amber-700">+49 174 8192809</a>.
           </p>
         </div>
 

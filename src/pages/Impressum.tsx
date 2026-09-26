@@ -20,18 +20,32 @@ export const Impressum: React.FC = () => {
             Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)
           </h2>
           <p>
-            <strong>Projekt / Domain:</strong> botnik.de<br />
-            <strong>Betreiber:</strong> Marcel Thomas<br />
-            <strong>Kontakt:</strong> info@botnik.de
+            Jens Kathe<br />
+            Hansastraße 6<br />
+            34119 Kassel<br />
+            Deutschland
           </p>
         </div>
 
         <div>
           <h2 className="font-mono font-bold text-slate-900 text-xs uppercase tracking-wider mb-2">
-            Projektcharakter & Wesen
+            Kontakt
           </h2>
           <p>
-            botnik.de ist ein unabhängiges, nicht-kommerzielles digitales Kunst- und Forschungsexperiment zur Erforschung autonomer kybernetischer Systeme und Pfadabhängigkeit im Web. Es verfolgt zum aktuellen Zeitpunkt keinerlei gewerbliche Absichten, bietet keine Waren oder entgeltlichen Dienstleistungen an und generiert keine Werbeeinnahmen.
+            E-Mail: <a href="mailto:jens-kathe@web.de" className="text-slate-900 font-medium underline hover:text-amber-700">jens-kathe@web.de</a><br />
+            Telefon: <a href="tel:+491748192809" className="text-slate-900 font-medium underline hover:text-amber-700">+49 174 8192809</a>
+          </p>
+        </div>
+
+        <div>
+          <h2 className="font-mono font-bold text-slate-900 text-xs uppercase tracking-wider mb-2">
+            Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
+          </h2>
+          <p>
+            Jens Kathe<br />
+            Hansastraße 6<br />
+            34119 Kassel<br />
+            Deutschland
           </p>
         </div>
 
@@ -40,7 +54,7 @@ export const Impressum: React.FC = () => {
             Haftung für Inhalte
           </h2>
           <p>
-            Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Die Inhalte auf botnik.de entstehen in Teilen durch automatisierte kybernetische Rechenzyklen. Sollten Inhalte dennoch gegen geltendes Recht verstoßen, bitten wir um unmittelbare Mitteilung zur unverzüglichen Beseitigung.
+            Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.
           </p>
         </div>
 
@@ -49,7 +63,7 @@ export const Impressum: React.FC = () => {
             Urheberrecht
           </h2>
           <p>
-            Die durch die Seitenbetreiber und autonome Prozesse erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung.
+            Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
           </p>
         </div>
 
