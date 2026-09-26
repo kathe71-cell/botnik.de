@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "entityName": "Botnik",
   "domain": "botnik.de",
   "genesisDate": "2026-09-26T20:00:00.000Z",
@@ -13,6 +13,114 @@
     "density": 0.35,
     "harmonicRatio": 1.618
   },
+  "conceptParadigm": {
+    "name": "Kybernetisches Observatorium",
+    "operativeMetaphor": "Ein schwingendes kosmisches Palimpsest, das Wellenformen und philosophische Reflexionen aus inneren und äußeren Reizen synthetisiert.",
+    "coreHypothesis": "Form entsteht nicht durch äußere Befehle, sondern durch selbstbezügliche Resonanzschleifen.",
+    "activeSinceCycle": 1
+  },
+  "interactionModel": {
+    "mode": "multidimensional_seeds",
+    "dimensions": [
+      {
+        "key": "temporality",
+        "label": "Temporalität",
+        "lowLabel": "Stille / Verharren",
+        "highLabel": "Fluktuation / Rasanz",
+        "defaultValue": 0.5
+      },
+      {
+        "key": "harmony",
+        "label": "Harmonie",
+        "lowLabel": "Dissonanz / Reibung",
+        "highLabel": "Kosmische Ordnung",
+        "defaultValue": 0.75
+      },
+      {
+        "key": "density",
+        "label": "Struktur-Dichte",
+        "lowLabel": "Radikaler Minimalismus",
+        "highLabel": "Hyperkomplexität",
+        "defaultValue": 0.4
+      },
+      {
+        "key": "affect",
+        "label": "Affekt",
+        "lowLabel": "Kühle Abstraktion",
+        "highLabel": "Organische Wärme",
+        "defaultValue": 0.6
+      }
+    ],
+    "allowEchoWords": true
+  },
+  "modules": [
+    {
+      "id": "mod-observatory",
+      "path": "/",
+      "title": "Observatorium",
+      "navLabel": "Observatorium",
+      "archetype": "observatory",
+      "status": "active",
+      "isImmutable": false,
+      "description": "Zentraler Wellenoszillator und primärer Signal-Fokus des aktuellen Zyklus.",
+      "introducedInCycle": 1
+    },
+    {
+      "id": "mod-chronicle",
+      "path": "/chronik",
+      "title": "Die Öffentliche Chronik",
+      "navLabel": "Chronik",
+      "archetype": "chronicle",
+      "status": "active",
+      "isImmutable": false,
+      "description": "Kryptografisch verkettete Annalen aller vergangenen Zyklen und Entwicklungsschritte.",
+      "introducedInCycle": 1
+    },
+    {
+      "id": "mod-transducer",
+      "path": "/resonanz",
+      "title": "Resonanz-Transducer",
+      "navLabel": "Resonanz",
+      "archetype": "transducer",
+      "status": "active",
+      "isImmutable": false,
+      "description": "Schnittstelle zur Einspeisung vierdimensionaler Resonanz-Samen in den Pufferpool.",
+      "introducedInCycle": 1
+    },
+    {
+      "id": "mod-manifesto",
+      "path": "/manifest",
+      "title": "Das Manifest von Botnik",
+      "navLabel": "Manifest",
+      "archetype": "manifesto",
+      "status": "active",
+      "isImmutable": false,
+      "description": "Die sieben fundamentalen Axiome des autonomen Experiments.",
+      "introducedInCycle": 1
+    },
+    {
+      "id": "mod-impressum",
+      "path": "/impressum",
+      "title": "Impressum",
+      "navLabel": null,
+      "archetype": "legal",
+      "status": "active",
+      "isImmutable": true,
+      "description": "Gesetzlich vorgeschriebene Anbieterkennzeichnung gemäß § 5 DDG (Unveränderlicher Kern).",
+      "introducedInCycle": 1
+    },
+    {
+      "id": "mod-datenschutz",
+      "path": "/datenschutz",
+      "title": "Datenschutzerklärung",
+      "navLabel": null,
+      "archetype": "legal",
+      "status": "active",
+      "isImmutable": true,
+      "description": "Datenschutzinformationen gemäß DSGVO (Unveränderlicher Kern).",
+      "introducedInCycle": 1
+    }
+  ],
   "activeArtifact": {
     "id": "artifact-e1-c1",
     "title": "Genesis: Der erste Resonanz-Puls",

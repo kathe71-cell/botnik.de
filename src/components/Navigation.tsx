@@ -10,12 +10,13 @@ export const Navigation: React.FC<NavigationProps> = ({ state }) => {
   const location = useLocation();
   const currentPath = location.pathname;
 
-  const navLinks = [
-    { path: '/', label: 'Observatorium' },
-    { path: '/chronik', label: 'Chronik' },
-    { path: '/resonanz', label: 'Resonanz-Transducer' },
-    { path: '/manifest', label: 'Manifest' }
-  ];
+  // Dynamische Navigations-Links basierend auf aktiven Modulen
+  const navLinks = state.modules
+    .filter((m) => m.status === 'active' && m.navLabel)
+    .map((m) => ({
+      path: m.path,
+      label: m.navLabel as string
+    }));
 
   return (
     <header className="sticky top-0 z-50 border-b border-stone-200 bg-stone-50/90 backdrop-blur-md">
@@ -36,12 +37,12 @@ export const Navigation: React.FC<NavigationProps> = ({ state }) => {
               </span>
             </div>
             <p className="text-[10px] text-stone-500 font-mono tracking-wider uppercase">
-              Kybernetisches Gedächtnis
+              {state.conceptParadigm?.name || 'Kybernetisches Gedächtnis'}
             </p>
           </div>
         </Link>
 
-        {/* Navigation Links */}
+        {/* Navigation Links (Dynamisch) */}
         <nav className="hidden md:flex items-center space-x-1 lg:space-x-2">
           {navLinks.map((link) => {
             const isActive = currentPath === link.path;
@@ -67,14 +68,14 @@ export const Navigation: React.FC<NavigationProps> = ({ state }) => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
           </span>
-          <span className="hidden sm:inline text-stone-600 font-medium">
-            AUTONOM
+          <span className="hidden sm:inline text-stone-600 font-medium uppercase">
+            {state.systemStatus}
           </span>
         </div>
 
       </div>
 
-      {/* Mobile Sub-Nav */}
+      {/* Mobile Sub-Nav (Dynamisch) */}
       <div className="md:hidden flex overflow-x-auto border-t border-stone-200/60 px-4 py-2 space-x-2 bg-stone-100/50">
         {navLinks.map((link) => {
           const isActive = currentPath === link.path;
