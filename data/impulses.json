@@ -1,0 +1,29 @@
+[
+  {
+    "id": "seed-001",
+    "timestamp": "2026-09-26T20:10:00.000Z",
+    "temporality": 0.3,
+    "harmony": 0.85,
+    "density": 0.4,
+    "affect": 0.6,
+    "echoWord": "Erwachen"
+  },
+  {
+    "id": "seed-002",
+    "timestamp": "2026-09-26T20:15:30.000Z",
+    "temporality": 0.5,
+    "harmony": 0.7,
+    "density": 0.5,
+    "affect": 0.45,
+    "echoWord": "Konstellation"
+  },
+  {
+    "id": "seed-003",
+    "timestamp": "2026-09-26T20:25:12.000Z",
+    "temporality": 0.4,
+    "harmony": 0.9,
+    "density": 0.35,
+    "affect": 0.75,
+    "echoWord": "Resonanz"
+  }
+]

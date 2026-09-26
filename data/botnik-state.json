@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0",
+  "entityName": "Botnik",
+  "domain": "botnik.de",
+  "genesisDate": "2026-09-26T20:00:00.000Z",
+  "currentEpoch": 1,
+  "currentCycle": 1,
+  "totalCyclesCompleted": 1,
+  "stateVector": {
+    "entropy": 0.28,
+    "resonance": 0.65,
+    "divergence": 0.42,
+    "density": 0.35,
+    "harmonicRatio": 1.618
+  },
+  "activeArtifact": {
+    "id": "artifact-e1-c1",
+    "title": "Genesis: Der erste Resonanz-Puls",
+    "epoch": 1,
+    "cycle": 1,
+    "synthesis": "Ein Punkt im leeren Raum ist kein Nichts; er ist die Summe aller noch ungerichteten Spannungen. Botnik beginnt nicht mit einer Behauptung oder einem Versprechen, sondern mit einer Frequenz. Wir zeichnen die erste Schwingung in das digitale Palimpsest: Ein System, das sich selbst beim Entstehen betrachtet.",
+    "visualParameters": {
+      "baseWave": 4.0,
+      "harmonics": [1, 2, 3, 5],
+      "colorPalette": ["#0f172a", "#38bdf8", "#818cf8", "#f59e0b"],
+      "geometryType": "lissajous",
+      "speed": 0.8,
+      "particleCount": 180
+    },
+    "generatedAt": "2026-09-26T20:00:00.000Z"
+  },
+  "systemStatus": "autonomous",
+  "lastEvolvedAt": "2026-09-26T20:00:00.000Z"
+}

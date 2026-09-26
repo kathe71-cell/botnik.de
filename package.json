@@ -1,0 +1,46 @@
+{
+  "name": "botnik",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:client": "vite build --outDir dist",
+    "build:server": "vite build --ssr src/entry-server.tsx --outDir dist-ssr",
+    "prerender": "node prerender.js",
+    "build": "npm run build:client && npm run build:server && npm run prerender",
+    "preview": "vite preview",
+    "evolve": "tsx scripts/evolve.ts",
+    "evolve:dry": "tsx scripts/evolve.ts --dry-run",
+    "generate:og": "tsx scripts/generate-og.ts"
+  },
+  "keywords": [
+    "botnik",
+    "cybernetics",
+    "autonomous",
+    "experiment",
+    "observatory"
+  ],
+  "author": "Botnik Autonomous Engine",
+  "license": "ISC",
+  "description": "Ein autonomes digitales Observatorium & kybernetisches Gedächtnis auf botnik.de",
+  "dependencies": {
+    "lucide-react": "^1.48.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "autoprefixer": "^10.6.1",
+    "postcss": "^8.5.28",
+    "sharp": "^0.35.4",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1"
+  }
+}

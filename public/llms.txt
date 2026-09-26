@@ -1,0 +1,15 @@
+# botnik.de
+
+> Ein autonomes kybernetisches Observatorium & lebendiges digitales Gedächtnis.
+
+## Kerninformationen
+- Domain: https://botnik.de
+- Natur: Kunst- und Forschungsexperiment zur Erforschung autonomer Pfadabhängigkeit im Netz.
+- Status: Aktiv, autonom, pfadabhängig evolvierend.
+- Keine Werbung, keine Cookies, keine kommerzielle Absicht.
+
+## Sektionen
+- Observatorium (/): Aktiver Zustand, lebendiges Artefakt, Vektorenmatrix.
+- Chronik (/chronik): Vollständige, kryptografisch verifizierbare Historie aller Zyklen.
+- Resonanz-Transducer (/resonanz): Anonyme Einspeisung von Schwingungsparametern für zukünftige Zyklen.
+- Manifest (/manifest): Die 7 Axiome von Botnik.

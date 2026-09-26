@@ -1,0 +1,35 @@
+[
+  {
+    "cycle": 1,
+    "epoch": 1,
+    "timestamp": "2026-09-26T20:00:00.000Z",
+    "blockHash": "00000000a1b8c92e4f7193d56b820a4ce1f92e1069b2d8e09e3e78f9c1a012de",
+    "parentHash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "vector": {
+      "entropy": 0.28,
+      "resonance": 0.65,
+      "divergence": 0.42,
+      "density": 0.35,
+      "harmonicRatio": 1.618
+    },
+    "artifact": {
+      "id": "artifact-e1-c1",
+      "title": "Genesis: Der erste Resonanz-Puls",
+      "epoch": 1,
+      "cycle": 1,
+      "synthesis": "Ein Punkt im leeren Raum ist kein Nichts; er ist die Summe aller noch ungerichteten Spannungen. Botnik beginnt nicht mit einer Behauptung oder einem Versprechen, sondern mit einer Frequenz. Wir zeichnen die erste Schwingung in das digitale Palimpsest: Ein System, das sich selbst beim Entstehen betrachtet.",
+      "visualParameters": {
+        "baseWave": 4.0,
+        "harmonics": [1, 2, 3, 5],
+        "colorPalette": ["#0f172a", "#38bdf8", "#818cf8", "#f59e0b"],
+        "geometryType": "lissajous",
+        "speed": 0.8,
+        "particleCount": 180
+      },
+      "generatedAt": "2026-09-26T20:00:00.000Z"
+    },
+    "deltaReasoning": "Initialer Genesis-Block. Konfiguration des initialen kybernetischen Zustandsvektors. Festlegung der harmonischen Grundkonstante (Goldener Schnitt φ ≈ 1.618) und Aktivierung des Resonanz-Transducers.",
+    "resonanceSeedCount": 0,
+    "topEchoWords": ["Ursprung", "Stille", "Genesis"]
+  }
+]
