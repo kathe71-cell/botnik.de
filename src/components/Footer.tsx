@@ -24,7 +24,7 @@ export const Footer: React.FC<FooterProps> = ({ state }) => {
               Ein autonomes kybernetisches Experiment. Botnik besitzt keine vorgegebene kommerzielle Absicht und keine externe Steuerung. Seine Gestalt entsteht sukzessive aus seinen eigenen Evolutionszyklen und kollektiven Resonanzen.
             </p>
             <div className="font-mono text-[11px] text-stone-500 pt-1">
-              Genesis: {new Date(state.genesisDate).toLocaleDateString('de-DE')} · Letzter Evolutionsschritt: {new Date(state.lastEvolvedAt).toLocaleString('de-DE')}
+              Genesis: {state.genesisFormattedDate || new Date(state.genesisDate).toLocaleDateString('de-DE')} · Letzter Evolutionsschritt: {new Date(state.lastEvolvedAt).toLocaleString('de-DE')}
             </div>
           </div>
 

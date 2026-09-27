@@ -3,6 +3,8 @@
   "entityName": "Botnik",
   "domain": "botnik.de",
   "genesisDate": "2026-09-26T20:00:00.000Z",
+  "genesisFormattedDate": "26. September 2026",
+  "genesisCommit": "f678db2f416c27b6c0da487626a6f2e789d9f3ac",
   "currentEpoch": 1,
   "currentCycle": 1,
   "totalCyclesCompleted": 1,

@@ -91,6 +91,9 @@ export interface ChronicleEntry {
   resonanceSeedCount: number;
   topEchoWords: string[];
   conceptualDelta?: ConceptualEvolutionDelta;
+  genesisDate?: string;
+  genesisFormattedDate?: string;
+  genesisCommit?: string;
 }
 
 export interface BotnikState {
@@ -98,6 +101,8 @@ export interface BotnikState {
   entityName: string;
   domain: string;
   genesisDate: string;
+  genesisFormattedDate?: string;
+  genesisCommit?: string;
   currentEpoch: number;
   currentCycle: number;
   totalCyclesCompleted: number;

@@ -38,7 +38,7 @@ export const Chronicle: React.FC<ChronicleProps> = ({ chronicle }) => {
         <div>
           <span className="text-stone-500 block">Genesis Datum</span>
           <span className="text-lg font-bold text-slate-950">
-            {new Date(chronicle[0]?.timestamp || '').toLocaleDateString('de-DE')}
+            {chronicle[0]?.genesisFormattedDate || new Date(chronicle[0]?.timestamp || '').toLocaleDateString('de-DE')}
           </span>
         </div>
         <div>
@@ -141,6 +141,14 @@ export const Chronicle: React.FC<ChronicleProps> = ({ chronicle }) => {
                       {entry.parentHash}
                     </div>
                   </div>
+                  {entry.genesisCommit && (
+                    <div className="space-y-1">
+                      <div className="text-stone-500">Genesis-Git-Commit:</div>
+                      <div className="text-amber-800 break-all select-all font-bold bg-amber-50/70 p-2 rounded border border-amber-200 text-[11px]">
+                        {entry.genesisCommit}
+                      </div>
+                    </div>
+                  )}
                   
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2">
                     <div className="bg-white p-2 rounded border border-stone-200">

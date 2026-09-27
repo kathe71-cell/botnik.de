@@ -1,8 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
 import { DynamicModuleDispatcher } from './components/DynamicModuleDispatcher';
+import { ScrollToTop } from './components/ScrollToTop';
+import { ScrollToTopButton } from './components/ScrollToTopButton';
 import { getBotnikState, getChronicle } from './data/store';
 
 export const App: React.FC = () => {
@@ -15,6 +18,9 @@ export const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#faf9f6] text-slate-900 selection:bg-amber-200 selection:text-slate-950">
+      {/* Automatisches Scrollen ins Sichtfeld bei Link- und Routenwechsel */}
+      <ScrollToTop />
+      
       <Navigation state={state} />
       
       <main className="flex-grow">
@@ -47,6 +53,12 @@ export const App: React.FC = () => {
       </main>
 
       <Footer state={state} />
+
+      {/* Floating Scroll to Top Button */}
+      <ScrollToTopButton />
+
+      {/* Vercel Analytics – cookieless, DSGVO-konform */}
+      <Analytics />
     </div>
   );
 };

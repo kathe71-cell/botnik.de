@@ -168,6 +168,20 @@ function validateSafetyAndLegalInvariants(modules: DynamicModule[]) {
 }
 
 /**
+ * Validiert die unveränderlichen historischen Genesis-Metadaten:
+ * - Das Genesis-Datum (26. September 2026) und der Genesis-Commit dürfen niemals verändert oder entfernt werden.
+ * - Der Genesis-Block (Zyklus 01) der Chronik bleibt dauerhaft unantastbar.
+ */
+function validateGenesisInvariants(state: BotnikState, chronicle: ChronicleEntry[]) {
+  if (!state.genesisDate || !state.genesisCommit) {
+    throw new Error('KONSTITUTIONELLE VERLETZUNG: Das Genesis-Datum und der Genesis-Commit dürfen nicht fehlen.');
+  }
+  if (chronicle.length === 0 || chronicle[0].cycle !== 1) {
+    throw new Error('KONSTITUTIONELLE VERLETZUNG: Der Genesis-Block 01 der Chronik darf niemals gelöscht oder überschrieben werden.');
+  }
+}
+
+/**
  * Aktualisiert public/sitemap.xml automatisch mit allen aktuell aktiven Routen
  */
 function syncSitemap(modules: DynamicModule[], baseDir: string) {
@@ -376,8 +390,9 @@ export function runEvolutionCycle(options: EvolutionOptions = {}): EvolutionResu
     }
   }
 
-  // 4. Strikte Konstitutionelle Sicherheits- & Rechtsprüfung
+  // 4. Strikte Konstitutionelle Sicherheits-, Rechts- & Genesis-Prüfung
   validateSafetyAndLegalInvariants(nextModules);
+  validateGenesisInvariants(currentState, chronicle);
 
   // 5. Artefakt-Generierung
   const themeCluster = PHILOSOPHICAL_THEMES[nextCycle % PHILOSOPHICAL_THEMES.length];
@@ -476,6 +491,9 @@ export function runEvolutionCycle(options: EvolutionOptions = {}): EvolutionResu
 
     const updatedState: BotnikState = {
       ...currentState,
+      genesisDate: currentState.genesisDate,
+      genesisFormattedDate: currentState.genesisFormattedDate || "26. September 2026",
+      genesisCommit: currentState.genesisCommit,
       currentEpoch: nextEpoch,
       currentCycle: nextCycle,
       totalCyclesCompleted: currentState.totalCyclesCompleted + 1,
