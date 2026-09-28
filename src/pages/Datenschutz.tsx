@@ -68,10 +68,10 @@ export const Datenschutz: React.FC = () => {
 
         <div>
           <h2 className="font-mono font-bold text-slate-900 text-xs uppercase tracking-wider mb-2">
-            6. Server-Log-Dateien
+            6. Server-Log-Dateien & Hosting
           </h2>
           <p>
-            Der Hosting-Provider unseres Servers erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browser automatisch an den Server übermittelt (Browsertyp, Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage). Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der technischen Funktionsfähigkeit und Sicherheit des Servers).
+            Diese Website wird über Vercel Inc. (440 N Barranca Ave #4133, Covina, CA 91723, USA) gehostet. Vercel erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browser automatisch an den Server übermittelt (Browsertyp, Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage). Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der technischen Funktionsfähigkeit und Sicherheit des Servers). Die Datenübertragung in die USA ist durch die Zertifizierung von Vercel unter dem EU-U.S. Data Privacy Framework (DPF) abgesichert.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export const Datenschutz: React.FC = () => {
             7. Ihre Rechte (Auskunft, Berichtigung, Löschung)
           </h2>
           <p>
-            Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an den Verantwortlichen wenden: Jens Kathe, E-Mail: <a href="mailto:jens-kathe@web.de" className="text-slate-900 font-medium underline hover:text-amber-700">jens-kathe@web.de</a>, Telefon: <a href="tel:+491748192809" className="text-slate-900 font-medium underline hover:text-amber-700">+49 174 8192809</a>.
+            Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten (Art. 15 DSGVO) sowie ein Recht auf Berichtigung (Art. 16 DSGVO), Sperrung oder Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenübertragbarkeit (Art. 20 DSGVO) sowie das Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO). Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an den Verantwortlichen wenden: Jens Kathe, E-Mail: <a href="mailto:jens-kathe@web.de" className="text-slate-900 font-medium underline hover:text-amber-700">jens-kathe@web.de</a>, Telefon: <a href="tel:+491748192809" className="text-slate-900 font-medium underline hover:text-amber-700">+49 174 8192809</a>. Zudem steht Ihnen ein Beschwerderecht bei der zuständigen Datenschutz-Aufsichtsbehörde zu (Art. 77 DSGVO).
           </p>
         </div>
 
