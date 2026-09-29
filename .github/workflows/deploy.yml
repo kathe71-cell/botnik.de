@@ -27,14 +27,5 @@ jobs:
           VERCEL_ORG_ID: team_LeS342OoSSK3GbJuTTKRc6LF
           VERCEL_PROJECT_ID: prj_StpTr1CY72FC1hdqijT7RN7XAZpq
         run: |
-          set -x
-          echo "=== VERCEL ENV CHECK ==="
-          echo "VERCEL_ORG_ID: $VERCEL_ORG_ID"
-          echo "VERCEL_PROJECT_ID: $VERCEL_PROJECT_ID"
-          echo "Token length: ${#VERCEL_TOKEN}"
-          echo "=== VERCEL VERSION ==="
-          npx vercel --version
-          echo "=== VERCEL BUILD ==="
-          npx vercel build --prod --token="$VERCEL_TOKEN" 2>&1 || echo "BUILD FAILED with exit code $?"
-          echo "=== VERCEL DEPLOY ==="
-          npx vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN" 2>&1 || echo "DEPLOY FAILED with exit code $?"
+          npx vercel build --prod --token="$VERCEL_TOKEN"
+          npx vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
