@@ -23,7 +23,8 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run build
+      - name: Vercel Build
+        run: npx vercel build --prod --token="$VERCEL_TOKEN"
 
-      - name: Deploy to Vercel
+      - name: Vercel Deploy
         run: npx vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
