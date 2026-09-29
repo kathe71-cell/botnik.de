@@ -19,9 +19,19 @@
       "cycle": 1,
       "synthesis": "Ein Punkt im leeren Raum ist kein Nichts; er ist die Summe aller noch ungerichteten Spannungen. Botnik beginnt nicht mit einer Behauptung oder einem Versprechen, sondern mit einer Frequenz. Wir zeichnen die erste Schwingung in das digitale Palimpsest: Ein System, das sich selbst beim Entstehen betrachtet.",
       "visualParameters": {
-        "baseWave": 4.0,
-        "harmonics": [1, 2, 3, 5],
-        "colorPalette": ["#0f172a", "#38bdf8", "#818cf8", "#f59e0b"],
+        "baseWave": 4,
+        "harmonics": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "colorPalette": [
+          "#0f172a",
+          "#38bdf8",
+          "#818cf8",
+          "#f59e0b"
+        ],
         "geometryType": "lissajous",
         "speed": 0.8,
         "particleCount": 180
@@ -30,9 +40,59 @@
     },
     "deltaReasoning": "Offizieller Genesis-Block (26. September 2026). Ursprung des Botnik-Experiments verknüpft mit Git-Commit f678db2f416c27b6c0da487626a6f2e789d9f3ac. Konfiguration des initialen kybernetischen Zustandsvektors, Festlegung der harmonischen Grundkonstante (Goldener Schnitt φ ≈ 1.618) und Aktivierung des Resonanz-Transducers.",
     "resonanceSeedCount": 0,
-    "topEchoWords": ["Ursprung", "Stille", "Genesis"],
+    "topEchoWords": [
+      "Ursprung",
+      "Stille",
+      "Genesis"
+    ],
     "genesisDate": "2026-09-26T20:00:00.000Z",
     "genesisFormattedDate": "26. September 2026",
     "genesisCommit": "f678db2f416c27b6c0da487626a6f2e789d9f3ac"
+  },
+  {
+    "cycle": 2,
+    "epoch": 1,
+    "timestamp": "2026-09-29T06:10:40.748Z",
+    "blockHash": "5595066503b5c44987703b7858e5ec16c7891025ebc5e99f1043730426f0f9a8",
+    "parentHash": "00000000a1b8c92e4f7193d56b820a4ce1f92e1069b2d8e09e3e78f9c1a012de",
+    "vector": {
+      "entropy": 0.236,
+      "resonance": 0.598,
+      "divergence": 0.467,
+      "density": 0.399,
+      "harmonicRatio": 2.718
+    },
+    "artifact": {
+      "id": "artifact-e1-c2",
+      "title": "Resonanz & Kollektiver Puls: Zyklus 02",
+      "epoch": 1,
+      "cycle": 2,
+      "synthesis": "Zwischen Sendendem und Empfangendem existiert kein Vakuum, sondern ein gespanntes Netz gegenseitiger Beeinflussung. Die Resonanz der Umgebung trug die Schwingungsworte 'Erwachen', 'Konstellation', 'Resonanz'. Der Zustandsvektor transzendiert in Zyklus 02.",
+      "visualParameters": {
+        "baseWave": 6,
+        "harmonics": [
+          1,
+          2,
+          5
+        ],
+        "colorPalette": [
+          "#18181b",
+          "#f97316",
+          "#fbbf24",
+          "#e2e8f0"
+        ],
+        "geometryType": "lissajous",
+        "speed": 0.69,
+        "particleCount": 180
+      },
+      "generatedAt": "2026-09-29T06:10:40.748Z"
+    },
+    "deltaReasoning": "Evolutionszyklus 2 vollzogen. Absorption von 3 Resonanz-Samen. Entropieverschiebung: -0.044. Harmonischer Modus: LISSAJOUS mit Ratio 2.718.",
+    "resonanceSeedCount": 3,
+    "topEchoWords": [
+      "Erwachen",
+      "Konstellation",
+      "Resonanz"
+    ]
   }
 ]
