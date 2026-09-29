@@ -9,6 +9,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: team_LeS342OoSSK3GbJuTTKRc6LF
+      VERCEL_PROJECT_ID: prj_StpTr1CY72FC1hdqijT7RN7XAZpq
     steps:
       - uses: actions/checkout@v4
 
@@ -22,11 +26,4 @@ jobs:
       - run: npm run build
 
       - name: Deploy to Vercel
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: team_LeS342OoSSK3GbJuTTKRc6LF
-          VERCEL_PROJECT_ID: prj_StpTr1CY72FC1hdqijT7RN7XAZpq
-        run: |
-          npx vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
-          npx vercel build --prod --token="$VERCEL_TOKEN"
-          npx vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
+        run: npx vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
